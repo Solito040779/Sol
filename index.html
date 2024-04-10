@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Usuário</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+        position: relative;
+    }
+
+    .menu-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+    
+    .btn-salvar {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .btn-salvar:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="row mt-3">
+      <div class="col">
+        <h1>Perfil de Usuário</h1>
+      </div>
+      <div class="col text-right">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Meu perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="row mt-3">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/usuario/Desktop/imagens/perfil.png" class="card-img-top" alt="Imagem do Perfil">
+          <div class="card-body">
+            <h5 class="card-title">João Vitor Longo</h5>
+            <p class="card-text">Email: 101537@aluno.uricer.edu</p>
+            <p class="card-text">Contato: (54) 9385-5706</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row mt-3">
+      <div class="col">
+        <h2>Editar Perfil</h2>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+          </div>
+          <div class="form-group">
+            <label for="contato">Contato</label>
+            <input type="text" class="form-control" id="contato" placeholder="Digite seu contato">
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+
+        <button type="submit" class="btn btn-salvar">Salvar</button>
+      </div>
+    </section>
+
+    <footer class="row mt-3">
+      <footer class="fixed-bottom">
+      <div class="col">
+        <p>Made by João Vitor Longo</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
